@@ -6,5 +6,5 @@ How does poker work?
 2. Game is initialized:
     Round # set to 0
     Player wins set to 0
-    Deck is shuffled #a new deck needs to be initialized every round
-    Deal each player their hands (2 cards) 
+    Deck is shuffled 
+    Deal each player their hands (2 cards)

@@ -9,12 +9,13 @@ class Game:
         self.round = 0
         # pool variable is set equal to current total bet value
         self.pool = 0
-        game_deck = Deck().shuffle
+        self.game_deck = Deck().shuffle
         for num in range(1,2):
             for player in self.players:
-                player.hand = game_deck.deal()
+                player.hand = self.game_deck.deal()
 
-
+    def start_game(self):
+        
     def get_players(self):
         return self.players
     def get_round(self):
@@ -24,4 +25,7 @@ class Game:
     def add_player(self, new_user):
         self.players.append(new_user)
     def deal_cards(self):
-        NULL
+        self.game_deck = Deck().shuffle()
+        for num in range(1,2):
+            for player in self.players:
+                player.hand = self.game_deck.deal()
