@@ -5,10 +5,12 @@ class Deck:
         self.deck = []
         for suit in Card.suit:
             for rank in Card.rank:
-                self.deck.append()
+                self.deck.append(Card(rank,suit))
 
-    def shuffle(self):
+    def shuffles(self):
         random.shuffle(self.deck)
+        print(self.deck)
+
 
     def deal(self, user):
         user.hand = user.hand.append(self.deck.pop)

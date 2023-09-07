@@ -4,7 +4,6 @@ class User:
         self.rounds_won = 0
         self.money = money
         self.hand = []
-        self.role
 
     def get_name(self):
         return self.name
